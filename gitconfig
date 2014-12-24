@@ -1,0 +1,21 @@
+[user]
+	name = Kevin Foote
+	email = 
+[core]
+	editor = vim
+	excludesfile = /Users/kevin/.gitignore_global
+[alias]
+        b = branch
+        co = checkout
+        lv = log --oneline
+        lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+        lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+        lg = !"git lg1"
+        #svl = "!f() { git log .|grep svn-id|awk -F'@' '{print $2}'|awk '{print '    git-svn-id: SvnRev ['$1'] GitRef ['$2']'}'; }; f"
+        #svl = !sh -c ' git log | grep svn-id | awk -F @ '\''{print $2}'\''| awk '\''{print "    git-svn-id: SvnRev ["$1"] GitRef ["$2"]"}'\'' '
+        svl = !sh -c ' git log | grep svn-id | awk -F"@" "{print $2}" '
+        #svl = !sh -c ' git log | grep svn-id '
+[push]
+	default = simple
+#[diff]
+#  external = ~/.local/bin/my_diff.sh
