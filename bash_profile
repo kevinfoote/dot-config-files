@@ -2,12 +2,14 @@
 #
 # Set up some exportable locations
 # 
-# previous Java release
+# old Java release
 JAVA_6_HOME=$(/usr/libexec/java_home -v1.6)
-# current Java release
+# previous Java release
 JAVA_7_HOME=$(/usr/libexec/java_home -v1.7)
-# default JDK is  7
-JAVA_HOME=$JAVA_7_HOME
+# current Java release
+JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
+# default JDK is 8
+JAVA_HOME=$JAVA_8_HOME
 # Maven
 MAVEN_HOME=/usr/local/apache/maven
 # Ant
@@ -26,6 +28,7 @@ TNS_ADMIN=$ORA_SQL
 alias ll='ls -al'
 alias java6='export JAVA_HOME=$JAVA_6_HOME'
 alias java7='export JAVA_HOME=$JAVA_7_HOME'
+alias java8='export JAVA_HOME=$JAVA_8_HOME'
 
 #alias git-svl='git log | grep svn-id|awk -F"@" \'{print $2}\'|awk \'{print "    git-svn-id: SvnRev ["$1"] GitRef ["$2"]"}\''
 
