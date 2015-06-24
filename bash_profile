@@ -2,8 +2,6 @@
 #
 # Set up some exportable locations
 # 
-# old Java release
-JAVA_6_HOME=$(/usr/libexec/java_home -v1.6)
 # previous Java release
 JAVA_7_HOME=$(/usr/libexec/java_home -v1.7)
 # current Java release
@@ -26,7 +24,6 @@ TNS_ADMIN=$ORA_SQL
 # MyAliases
 #alias clusters='cat .csshrc | tail -n 1 | awk -F"=" \'{print $2}\' | sed -e \'s/\s/\n/\''
 alias ll='ls -al'
-alias java6='export JAVA_HOME=$JAVA_6_HOME'
 alias java7='export JAVA_HOME=$JAVA_7_HOME'
 alias java8='export JAVA_HOME=$JAVA_8_HOME'
 
@@ -42,7 +39,7 @@ function @ {
 }
 
 # Exports 
-export JAVA_6_HOME JAVA_7_HOME JAVA_HOME MAVEN_HOME ANT_HOME UNBOUNDED ORA_SQL DYLD_LIBRARY_PATH TNS_ADMIN
+export JAVA_7_HOME JAVA_HOME MAVEN_HOME ANT_HOME UNBOUNDED ORA_SQL DYLD_LIBRARY_PATH TNS_ADMIN
 
 # PathMunging
 export PATH=$ORA_SQL:~/.local/bin:$UNBOUNDED/tools:$MAVEN_HOME/bin:$ANT_HOME/bin:$PATH
