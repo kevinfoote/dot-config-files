@@ -15,7 +15,7 @@ MAVEN_HOME=/usr/local/apache/maven
 # Ant
 ANT_HOME=/usr/local/apache/ant
 # Unbounded LDAP Tools
-UNBOUNDED=~/.local/bin/unboundid-ldapsdk-2.0.1-se
+UNBOUNDED=~/.local/bin/unboundid
 # SQLPlus
 ORA_SQL=~/.local/bin/instantclient_11_2
 # SQL LD PATH
