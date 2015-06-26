@@ -16,6 +16,8 @@ ANT_HOME=/usr/local/apache/ant
 UNBOUNDED=~/.local/bin/unboundid
 # SQLPlus
 ORA_SQL=~/.local/bin/instantclient_11_2
+# SQLcl
+ORA_SQLcl=~/.local/bin/sqlcl
 # SQL LD PATH
 DYLD_LIBRARY_PATH=$ORA_SQL
 # TNS_NAMES
@@ -42,7 +44,7 @@ function @ {
 export JAVA_7_HOME JAVA_HOME MAVEN_HOME ANT_HOME UNBOUNDED ORA_SQL DYLD_LIBRARY_PATH TNS_ADMIN
 
 # PathMunging
-export PATH=$ORA_SQL:~/.local/bin:$UNBOUNDED/tools:$MAVEN_HOME/bin:$ANT_HOME/bin:$PATH
+export PATH=$ORA_SQL:$ORA_SQLcl/bin:~/.local/bin:$UNBOUNDED/tools:$MAVEN_HOME/bin:$ANT_HOME/bin:$PATH
 
 # Trigger ~/.bashrc commands
 #. ~/.bashrc
