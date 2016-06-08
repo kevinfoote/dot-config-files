@@ -22,6 +22,8 @@ ORA_SQLcl=~/.local/bin/sqlcl
 DYLD_LIBRARY_PATH=$ORA_SQL
 # TNS_NAMES
 TNS_ADMIN=$ORA_SQL
+# WORK DOMAIN
+WORK_DOMAIN=colorado.edu
 
 # MyAliases
 #alias clusters='cat .csshrc | tail -n 1 | awk -F"=" \'{print $2}\' | sed -e \'s/\s/\n/\''
@@ -36,12 +38,12 @@ function @ {
   if [ $2 ]; then 
     ssh -X <userid>@$1.$2
   else  
-    ssh -X <userid>@$1.uoregon.edu
+    ssh -X <userid>@$1.$WORK_DOMAIN
   fi
 }
 
 # Exports 
-export JAVA_7_HOME JAVA_HOME MAVEN_HOME ANT_HOME UNBOUNDED ORA_SQL DYLD_LIBRARY_PATH TNS_ADMIN
+export JAVA_7_HOME JAVA_HOME MAVEN_HOME ANT_HOME UNBOUNDED ORA_SQL DYLD_LIBRARY_PATH TNS_ADMIN WORK_DOMAIN
 
 # PathMunging
 export PATH=$ORA_SQL:$ORA_SQLcl/bin:~/.local/bin:$UNBOUNDED/tools:$MAVEN_HOME/bin:$ANT_HOME/bin:$PATH
