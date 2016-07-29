@@ -35,6 +35,8 @@ Plugin 'mileszs/ack.vim'
 Plugin 'justinmk/vim-sneak'
 " dispatch.vim
 Plugin 'tpope/vim-dispatch'
+" fugitive.vim - Uber GIT wrapper
+Plugin 'tpope/vim-fugitive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
