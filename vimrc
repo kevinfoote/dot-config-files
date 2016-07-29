@@ -27,8 +27,12 @@ Plugin 'VundleVim/Vundle.vim'
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
 " "Plugin 'ascenator/L9', {'name': 'newL9'}
-" AG plugin for search
-Plugin 'rking/ag.vim'
+" Ack plugin for search
+Plugin 'mileszs/ack.vim'
+" Ag plugin for search 
+"Plugin 'rking/ag.vim'
+" Sneak plugin
+Plug 'justinmk/vim-sneak'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
