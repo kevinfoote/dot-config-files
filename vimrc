@@ -33,6 +33,8 @@ Plugin 'mileszs/ack.vim'
 "Plugin 'rking/ag.vim'
 " Sneak plugin
 Plugin 'justinmk/vim-sneak'
+" dispatch.vim
+Plugin 'tpope/vim-dispatch'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
