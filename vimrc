@@ -32,7 +32,7 @@ Plugin 'mileszs/ack.vim'
 " Ag plugin for search 
 "Plugin 'rking/ag.vim'
 " Sneak plugin
-Plug 'justinmk/vim-sneak'
+Plugin 'justinmk/vim-sneak'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
