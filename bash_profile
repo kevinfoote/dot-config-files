@@ -24,6 +24,8 @@ DYLD_LIBRARY_PATH=$ORA_SQL
 TNS_ADMIN=$ORA_SQL
 # WORK DOMAIN
 WORK_DOMAIN=colorado.edu
+# EID
+EID=
 
 # MyAliases
 #alias clusters='cat .csshrc | tail -n 1 | awk -F"=" \'{print $2}\' | sed -e \'s/\s/\n/\''
@@ -38,7 +40,7 @@ function @ {
   if [ $2 ]; then 
     ssh -X <userid>@$1.$2
   else  
-    ssh -X <userid>@$1.$WORK_DOMAIN
+    ssh -X $EID@$1.$WORK_DOMAIN
   fi
 }
 
