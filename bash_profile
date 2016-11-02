@@ -22,6 +22,8 @@ ORA_SQLcl=~/.local/bin/sqlcl
 DYLD_LIBRARY_PATH=$ORA_SQL
 # TNS_NAMES
 TNS_ADMIN=$ORA_SQL
+# GOPATH
+GOPATH=~/dev/work
 # WORK DOMAIN
 WORK_DOMAIN=colorado.edu
 # EID
@@ -45,10 +47,10 @@ function @ {
 }
 
 # Exports 
-export JAVA_7_HOME JAVA_HOME MAVEN_HOME ANT_HOME UNBOUNDED ORA_SQL DYLD_LIBRARY_PATH TNS_ADMIN WORK_DOMAIN EID
+export JAVA_7_HOME JAVA_HOME MAVEN_HOME ANT_HOME UNBOUNDED ORA_SQL DYLD_LIBRARY_PATH TNS_ADMIN WORK_DOMAIN EID GOPATH
 
 # PathMunging
-export PATH=$ORA_SQL:$ORA_SQLcl/bin:~/.local/bin:$UNBOUNDED/tools:$MAVEN_HOME/bin:$ANT_HOME/bin:$PATH
+export PATH=$ORA_SQL:$ORA_SQLcl/bin:~/.local/bin:$UNBOUNDED/tools:$MAVEN_HOME/bin:$ANT_HOME/bin:$GOPATH/bin:$PATH
 
 # Trigger ~/.bashrc commands
 #. ~/.bashrc
