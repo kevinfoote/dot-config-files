@@ -53,7 +53,17 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-set number
+" Indenting 
+set tabstop 8            " tabs at proper spots
+set expandtab            " dont use actual tab character
+set shiftwidth=4         " indenting is 4 spaces
+set autoindent           " turn on 
+set smartindent          " does the right thing (mostly)
+set cindent              " more strict rules for C programming
+" Line Numbers
+set number               " turn on linenumbers
 set numberwidth=3
-syntax on
-set ruler
+" Syntax (yes)
+syntax on                " use syntax highlighting
+" Ruler
+set ruler                " use ruler at bottom right
