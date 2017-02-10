@@ -54,7 +54,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 " Indenting 
-set tabstop 8            " tabs at proper spots
+set tabstop=8            " tabs at proper spots
 set expandtab            " dont use actual tab character
 set shiftwidth=4         " indenting is 4 spaces
 set autoindent           " turn on 
