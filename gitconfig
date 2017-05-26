@@ -17,5 +17,9 @@
         #svl = !sh -c ' git log | grep svn-id '
 [push]
 	default = simple
-#[diff]
-#  external = ~/.local/bin/my_diff.sh
+[diff]
+#       external = ~/.local/bin/my_diff.sh
+        tool = vimdiff
+
+[merge]
+
