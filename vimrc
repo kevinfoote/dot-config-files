@@ -37,6 +37,8 @@ Plugin 'justinmk/vim-sneak'
 Plugin 'tpope/vim-dispatch'
 " fugitive.vim - Uber GIT wrapper
 Plugin 'tpope/vim-fugitive'
+" make JS / JSON pretty vim-jsbeautify
+Plugin 'maksimr/vim-jsbeautify'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
