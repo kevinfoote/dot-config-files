@@ -56,6 +56,9 @@ filetype plugin indent on    " required
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
 " see :h vundle for more details or wiki for FAQ
+syntax enable
+set background=dark
+colorscheme solarized
 " Put your non-Plugin stuff after this line
 
 " Indenting 
