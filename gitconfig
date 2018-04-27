@@ -3,7 +3,7 @@
 	email = 
 [core]
 	editor = vim
-	excludesfile = /Users/kevin/.gitignore_global
+	excludesfile = ~/.gitignore
 [alias]
         b = branch
         co = checkout
