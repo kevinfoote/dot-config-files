@@ -61,6 +61,13 @@ set background=dark
 colorscheme solarized
 " Put your non-Plugin stuff after this line
 
+" +clipboard stuff
+if has("clipboard")
+  set clipboard=unnamed " copy to the system clipboard
+  if has("unnamedplus") " X11 support
+    set clipboard+=unnamedplus
+  endif
+endif
 " Indenting 
 set tabstop=8            " tabs at proper spots
 set expandtab            " dont use actual tab character
