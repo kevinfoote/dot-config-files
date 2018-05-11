@@ -42,6 +42,8 @@ Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-fugitive'
 " make JS / JSON pretty vim-jsbeautify
 Plugin 'maksimr/vim-jsbeautify'
+" bufexplorer
+Plugin 'jlanzarotta/bufexplorer'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
