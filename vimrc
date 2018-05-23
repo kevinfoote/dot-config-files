@@ -63,6 +63,7 @@ filetype plugin indent on    " required
 syntax enable
 set background=dark
 colorscheme solarized
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']                      " quick-scope
 " Put your non-Plugin stuff after this line
 
 " +clipboard stuff
