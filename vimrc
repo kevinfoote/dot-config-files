@@ -44,6 +44,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'maksimr/vim-jsbeautify'
 " bufexplorer
 Plugin 'jlanzarotta/bufexplorer'
+" quick-scope
+Plugin 'unblevable/quick-scope'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
