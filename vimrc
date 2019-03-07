@@ -44,6 +44,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'maksimr/vim-jsbeautify'
 " bufexplorer
 Plugin 'jlanzarotta/bufexplorer'
+" quick-scope
+Plugin 'unblevable/quick-scope'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -61,6 +63,7 @@ filetype plugin indent on    " required
 syntax enable
 set background=dark
 colorscheme solarized
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']                      " quick-scope
 " Put your non-Plugin stuff after this line
 
 " +clipboard stuff
