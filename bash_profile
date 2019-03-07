@@ -2,10 +2,12 @@
 #
 # Set up some exportable locations
 # 
-# previous Java release
+# 7 Java release
 JAVA_7_HOME=$(/usr/libexec/java_home -v1.7)
-# current Java release
+# 8 Java release
 JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
+# 11 Java release
+JAVA_11_HOME=$(/usr/libexec/java_home -v1.11)
 # default JDK is 8
 JAVA_HOME=$JAVA_8_HOME
 # Maven
