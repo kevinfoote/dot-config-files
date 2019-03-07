@@ -36,6 +36,7 @@ EID=
 alias ll='ls -al'
 alias java7='export JAVA_HOME=$JAVA_7_HOME'
 alias java8='export JAVA_HOME=$JAVA_8_HOME'
+alias java11='export JAVA_HOME=$JAVA_11_HOME'
 
 #alias git-svl='git log | grep svn-id|awk -F"@" \'{print $2}\'|awk \'{print "    git-svn-id: SvnRev ["$1"] GitRef ["$2"]"}\''
 
@@ -49,7 +50,7 @@ function @ {
 }
 
 # Exports 
-export JAVA_7_HOME JAVA_HOME MAVEN_HOME ANT_HOME UNBOUNDED ORA_SQL DYLD_LIBRARY_PATH TNS_ADMIN WORK_DOMAIN EID GOPATH
+export JAVA_HOME MAVEN_HOME ANT_HOME UNBOUNDED ORA_SQL DYLD_LIBRARY_PATH TNS_ADMIN WORK_DOMAIN EID GOPATH
 
 # PathMunging
 export PATH=$ORA_SQL:$ORA_SQLcl/bin:~/.local/bin:$UNBOUNDED/tools:$MAVEN_HOME/bin:$ANT_HOME/bin:$GOPATH/bin:$PATH
