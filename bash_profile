@@ -11,15 +11,15 @@ JAVA_11_HOME=$(/usr/libexec/java_home -v11)
 # default JDK is 8
 JAVA_HOME=$JAVA_8_HOME
 # Maven
-MAVEN_HOME=/usr/local/apache/maven
+MAVEN_HOME=/usr/local/apache/maven/
 # Ant
-ANT_HOME=/usr/local/apache/ant
+ANT_HOME=/usr/local/apache/ant/
 # Unbounded LDAP Tools
-UNBOUNDED=~/.local/bin/unboundid
+UNBOUNDED=~/.local/bin/unboundid/
 # SQLPlus
-ORA_SQL=~/.local/bin/instantclient_11_2
+ORA_SQL=~/.local/bin/instantclient_11_2/
 # SQLcl
-ORA_SQLcl=~/.local/bin/sqlcl
+ORA_SQLcl=~/.local/bin/sqlcl/
 # SQL LD PATH
 DYLD_LIBRARY_PATH=$ORA_SQL
 # TNS_NAMES
