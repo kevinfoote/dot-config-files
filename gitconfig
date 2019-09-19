@@ -1,6 +1,6 @@
 [user]
 	name = Kevin Foote
-	email = 
+	email = kevin.foote@colorado.edu
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global
@@ -22,4 +22,10 @@
         tool = vimdiff
 
 [merge]
+
+[sendemail]
+        smtpEncryption = tls
+        smtpServer = smtp.gmail.com
+        smtpUser = kefo1760@gmail.com
+        smtpServerPort = 587
 
