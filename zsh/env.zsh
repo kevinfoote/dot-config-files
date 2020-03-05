@@ -28,9 +28,9 @@ GOPATH=~/dev/work
 # BREWPATH
 BREWPATH=/usr/local/bin:/usr/local/sbin
 # WORK DOMAIN
-WORK_DOMAIN=colorado.edu
+WORK_DOMAIN=
 # EID
-EID=kefo1760
+EID=
 
 # MyAliases
 #alias ll='ls -al'
