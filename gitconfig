@@ -20,7 +20,8 @@
 [diff]
 #       external = ~/.local/bin/my_diff.sh
         tool = vimdiff
-
+[pull]
+        rebase=false
 [merge]
 
 [sendemail]
