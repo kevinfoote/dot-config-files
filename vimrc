@@ -48,6 +48,8 @@ Plugin 'jlanzarotta/bufexplorer'
 Plugin 'unblevable/quick-scope'
 " essential emmet
 Plugin 'mattn/emmet-vim'
+" vimgutter
+Plugin 'airblade/vim-gitgutter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -66,6 +68,9 @@ syntax enable
 set background=dark
 colorscheme solarized
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']                      " quick-scope
+" GitGutter settings
+" :GitGutterToggle
+
 " Put your non-Plugin stuff after this line
 
 " +clipboard stuff
@@ -82,10 +87,9 @@ set shiftwidth=4         " indenting is 4 spaces
 set autoindent           " turn on 
 set smartindent          " does the right thing (mostly)
 set cindent              " more strict rules for C programming
-" Line Numbers
 set number               " turn on linenumbers
-set numberwidth=3
-" Syntax (yes)
-syntax on                " use syntax highlighting
-" Ruler
+set numberwidth=3        " updatetime (for use w/gitgutter)
+set updatetime=500
+syntax on                " use syntax highlighting yes|no
 set ruler                " use ruler at bottom right
+" end
