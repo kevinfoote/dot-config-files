@@ -1,14 +1,27 @@
+# Homebrew addition
+BREWPATH=/opt/homebrew
+
+# ORACLE CLI+
+ORA_SQL=
+ORA_SQLcli=
+
+# UNBOUNDID
+UNBOUNDID=
+
 # If you come from bash you might have to change your $PATH.
+# Default PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+#export PATH=$ORA_SQL:$ORA_SQLcl/bin:~/.local/bin:$UNBOUNDED/tools:$MAVEN_HOME/bin:$ANT_HOME/bin:$GOPATH/bin:$BREWPATH:$PATH
+export PATH=$HOME/bin:$HOME/.local/bin:$BREWPATH/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/kevinfoote/.oh-my-zsh"
+export ZSH="/Users/kevin/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="nt9"
+ZSH_THEME="random"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
