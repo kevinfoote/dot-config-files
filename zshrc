@@ -1,18 +1,18 @@
 # Homebrew addition
-BREWPATH=/opt/homebrew
+#BREWPATH=/opt/homebrew
 
 # ORACLE CLI+
-ORA_SQL=
-ORA_SQLcli=
+#ORA_SQL=
+#ORA_SQLcli=
 
 # UNBOUNDID
-UNBOUNDID=
+#UNBOUNDID=
 
 # If you come from bash you might have to change your $PATH.
 # Default PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 #export PATH=$ORA_SQL:$ORA_SQLcl/bin:~/.local/bin:$UNBOUNDED/tools:$MAVEN_HOME/bin:$ANT_HOME/bin:$GOPATH/bin:$BREWPATH:$PATH
-export PATH=$HOME/bin:$HOME/.local/bin:$BREWPATH/bin:$PATH
+#export PATH=$HOME/bin:$HOME/.local/bin:$BREWPATH/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/kevin/.oh-my-zsh"
@@ -27,7 +27,8 @@ ZSH_THEME="random"
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
 # If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+#ZSH_THEME_RANDOM_CANDIDATES=( "gnzh" "smt" "nt9" )
+ZSH_THEME_RANDOM_CANDIDATES=( "smt" "nt9" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"

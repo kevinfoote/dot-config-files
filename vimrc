@@ -3,7 +3,7 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set pathogen autoload
-execute pathogen#infect() 
+" execute pathogen#infect() 
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -50,6 +50,7 @@ Plugin 'unblevable/quick-scope'
 Plugin 'mattn/emmet-vim'
 " vimgutter
 Plugin 'airblade/vim-gitgutter'
+Plugin 'micha/vim-colors-solarized'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
