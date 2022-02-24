@@ -15,6 +15,7 @@
         #svl = !sh -c ' git log | grep svn-id | awk -F @ '\''{print $2}'\''| awk '\''{print "    git-svn-id: SvnRev ["$1"] GitRef ["$2"]"}'\'' '
         svl = !sh -c ' git log | grep svn-id | awk -F"@" "{print $2}" '
         #svl = !sh -c ' git log | grep svn-id '
+        gone = !"git fetch -p && git for-each-ref --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" {print $1}' | xargs -r git branch -D"
 [push]
 	default = simple
 [diff]
