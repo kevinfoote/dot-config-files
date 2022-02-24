@@ -40,5 +40,7 @@ Thumbs.db
 ########################
 .project
 .idea/
+.iml
 .classpath
 .vscode
+/workspace
