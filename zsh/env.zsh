@@ -9,8 +9,8 @@ JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
 JAVA_11_HOME=$(/usr/libexec/java_home -v11)
 # default JDK is 8
 JAVA_HOME=$JAVA_8_HOME
-# Maven
-MAVEN_HOME=/usr/local/apache/maven/
+# Maven v3.6.3
+MAVEN_HOME=~/.local/bin/maven
 # Ant
 ANT_HOME=/usr/local/apache/ant/
 # Unbounded LDAP Tools
@@ -27,6 +27,8 @@ TNS_ADMIN=$ORA_SQL
 GOPATH=~/dev/work
 # BREWPATH
 BREWPATH=/usr/local/bin:/usr/local/sbin
+# RANCHER-DESKTOP BIN
+RDBIN=~/.rd/bin
 # WORK DOMAIN
 WORK_DOMAIN=
 # EID
@@ -51,8 +53,8 @@ function @ {
 }
 
 # Exports 
-export JAVA_HOME MAVEN_HOME ANT_HOME UNBOUNDED ORA_SQL DYLD_LIBRARY_PATH TNS_ADMIN WORK_DOMAIN EID GOPATH
+export JAVA_HOME MAVEN_HOME ANT_HOME UNBOUNDED ORA_SQL DYLD_LIBRARY_PATH TNS_ADMIN WORK_DOMAIN EID GOPATH RDBIN
 
 # PathMunging
-export PATH=$ORA_SQL:$ORA_SQLcl/bin:~/.local/bin:$UNBOUNDED/tools:$MAVEN_HOME/bin:$ANT_HOME/bin:$GOPATH/bin:$BREWPATH:$PATH
+export PATH=$ORA_SQL:$ORA_SQLcl/bin:~/.local/bin:~/$RDBIN:$UNBOUNDED/tools:$MAVEN_HOME/bin:$ANT_HOME/bin:$GOPATH/bin:$BREWPATH:$PATH
 
