@@ -26,7 +26,7 @@ TNS_ADMIN=$ORA_SQL
 # GOPATH
 GOPATH=~/dev/work
 # BREWPATH
-BREWPATH=/usr/local/bin:/usr/local/sbin
+BREWPATH=/opt/homebrew/bin:/opt/homebrew/sbin
 # RANCHER-DESKTOP BIN
 RDBIN=~/.rd/bin
 # WORK DOMAIN
