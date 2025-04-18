@@ -39,6 +39,7 @@ EID=
 alias java7='export JAVA_HOME=$JAVA_7_HOME'
 alias java8='export JAVA_HOME=$JAVA_8_HOME'
 alias java11='export JAVA_HOME=$JAVA_11_HOME'
+alias pwgen6='pwgen -A -n -r abcdefghijklmnopqrstuvwxyz'
 
 alias git='noglob git'
 alias scp='noglob scp'

@@ -81,6 +81,9 @@ if has("clipboard")
     set clipboard+=unnamedplus
   endif
 endif
+" Crosshairs
+set cursorline           " enable the horizontal line
+set cursorcolumn         " enable the vertical line
 " Indenting 
 set tabstop=8            " tabs at proper spots
 set expandtab            " dont use actual tab character
